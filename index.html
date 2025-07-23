@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Website</h1>
+    
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <img id="icon" class="weather-icon" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/weather-not-available-5938516-4985971.png" alt="Weather Icon" />
+    <div class="weather-box">
+      <p><strong>Location:</strong> <span id="location">--</span></p>
+      <p><strong>Temperature:</strong> <span id="temp">--</span>°C</p>
+      <p><strong>Condition:</strong> <span id="condition">--</span></p>
+      <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+      <p><strong>Air Quality:</strong> <span id="aqi">--</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
